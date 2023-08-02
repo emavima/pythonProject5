@@ -29,11 +29,11 @@ def longest_common_prefix_2(s):
     if len(s) == 0:
         return None
     for char in s[0]:
-       for word in s[1:]:
-           if word[i] != char:
-               return word[:i]
-       i += 1
+        for word in s[1:]:
+            if word[i] != char:
+                return word[:i]
+        i += 1
 
     return s[0]
 
-#print(longest_common_prefix_2(lst))
+print(longest_common_prefix_2(lst))
